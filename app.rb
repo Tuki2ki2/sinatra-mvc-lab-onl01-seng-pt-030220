@@ -9,6 +9,7 @@ end
 
 post '/piglatinize' do
 @new_pigs_phrase = PigLatinizer.new.piglatinize(params[:user_phrase])
+erb :results
 end
 
 
