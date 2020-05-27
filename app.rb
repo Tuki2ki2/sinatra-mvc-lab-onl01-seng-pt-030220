@@ -7,6 +7,9 @@ get '/' do
 erb :user_input
 end
 
+post '/' do
+
+end
 
 
 end
