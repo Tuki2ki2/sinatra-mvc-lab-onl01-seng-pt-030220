@@ -8,7 +8,8 @@ erb :user_input
 end
 
 post '/' do
-PigLatinizer.new
+@new_pigs = PigLatinizer.new
+@new_pigs_phrase = PigLatinizer.new.piglatinize(params[:user_phrase])
 end
 
 
