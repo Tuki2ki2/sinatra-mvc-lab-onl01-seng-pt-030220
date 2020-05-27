@@ -18,13 +18,13 @@ end
 
 def pig_word(message)
   vowels = ["a","e","i","o","u"]
-  first_letter = message[0].downcase
+  first_letter = message[0]
   array = []
   if vowels.include?(first_letter)
     "#{message}way"
   else
     message_array = message.split("")
-    array<<message_array[0].downcase
+    array<<message_array[0]
     message_array.shift
     if vowels.include?message_array[0]
       "#{message_array.join("") + array.join("") + "ay"}"
