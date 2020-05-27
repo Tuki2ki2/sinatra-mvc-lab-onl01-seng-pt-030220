@@ -18,7 +18,7 @@ end
 
 def pig_word(message)
   vowels = ["a","e","i","o","u"]
-  first_letter = message[0]
+  first_letter = message[0].downcase
   array = []
   if vowels.include?(first_letter)
     "#{message}way"
